@@ -15,6 +15,8 @@ html=(root/'index.html').read_text()
 html=html.replace('noindex,follow,max-image-preview:large','index,follow,max-image-preview:large')
 html=html.replace('https://klasphilipp-private.github.io/hollaender/','https://www.nadinehollaender.de/')
 (out/'index.html').write_text(html)
+for name in ['impressum.html', 'datenschutz.html']:
+    copy2(root/name, out/name)  # Draft legal pages retain noindex until completed.
 copytree(root/'assets',out/'assets',dirs_exist_ok=True)
 copy2(root/'favicon.ico',out/'favicon.ico')
 (out/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: https://www.nadinehollaender.de/sitemap.xml\n')

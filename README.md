@@ -30,3 +30,21 @@ Google entscheidet selbst über den angezeigten Titel, Beschreibungstext und ein
 Farbfächer: Petrol `#006D82`, Blau `#8AB7C2`, Hellblau `#E2EDEF`, Schwarz und Weiß. Original-Logo, SVG-Pfeile, Logo-Signet als Favicon. Akzidenz Grotesk wird bis zur Lieferung einer lizenzierten Webfont durch Helvetica/Arial ersetzt. Keine Analysewerkzeuge, Cookies oder extern geladenen Schriften.
 
 Mails, Zugangsdaten und unbearbeitete Quelldokumente gehören nicht in dieses Repository.
+
+## Vorbereitete Rechtstexte und Header
+
+`impressum.html` und `datenschutz.html` sind vom Footer jeder Seite erreichbar. Hellblaue Kästen mit der Beschriftung „Vor dem Start klären“ kennzeichnen unbestätigte Angaben. Die Seiten bleiben auch im IONOS-Paket vorerst auf `noindex`, bis die Texte vervollständigt und geprüft sind.
+
+Offen: Anbieterin/Adresse bestätigen; ggf. USt-/Wirtschafts-ID und Register; reglementierte Tätigkeit; Verbraucherschlichtung; ggf. redaktionell verantwortliche Person; Bildnachweis; Verantwortlichkeit/Datenschutzkontakt; Hostingvertrag und Log-Fristen; E-Mail-Dienst und Löschfristen; finale technische Dienste. Nicht zutreffende optionale Abschnitte vor dem Start entfernen. Der aktuelle GitHub-Host und der geplante IONOS-Host sind getrennt beschrieben.
+
+Der gemeinsame Header ist sticky mit transparentem Weiß und Hintergrundunschärfe. Ab 120 px Scrollposition verkleinert er sich; beim Rückweg unter 40 px wird er wieder größer. Die Hysterese verhindert Flackern. Bewegungsreduktion wird berücksichtigt. Der Navigationsbereich kann später weitere Links aufnehmen.
+
+Recherchegrundlagen (4. November 2026):
+- § 5 DDG: https://www.gesetze-im-internet.de/ddg/__5.html
+- § 36 VSBG: https://www.gesetze-im-internet.de/vsbg/__36.html
+- DSGVO: https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=de
+- LDI NRW: https://www.ldi.nrw.de/
+- GitHub: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
+- IONOS Anbieter: https://www.ionos.de/impressum.html
+- IONOS Logdateien: https://www.ionos.de/hilfe/hosting/log-dateien/hinweise-zu-logdateien/
+- IONOS Auftragsverarbeitung: https://www.ionos.de/hilfe/index.php?id=3212
