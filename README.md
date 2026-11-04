@@ -1,31 +1,32 @@
-# Nadine Holländer – Webseitenentwürfe
+# Nadine Holländer – Website
 
-Drei statische, responsive Gestaltungsentwürfe für die spätere Website auf IONOS.
+Gewählte Gestaltung: ehemaliger Entwurf 3. Die Website liegt jetzt direkt in `index.html`; die übrigen Entwürfe und die Auswahlübersicht wurden entfernt.
 
-- `index.html`: Entwurfsübersicht
-- `entwurf-1.html`: Persönlicher Einstieg mit Porträt
-- `entwurf-2.html`: Reduzierte „Bald mehr“-Seite
-- `entwurf-3.html`: Ausführlicher Einstieg mit Kurzprofil
+- Überschrift: **Veränderung beginnt mit einer neuen Perspektive.**
+- Haltung: **Strukturiert. Zugewandt. Authentisch.**
+- Vorschau: https://klasphilipp-private.github.io/hollaender/
+- Spätere Hauptdomain: https://www.nadinehollaender.de/
 
-## Vorschau
+## SEO
 
-GitHub Pages veröffentlicht den Stand von `main` aus dem Repository-Hauptverzeichnis. Alle Links und Assets sind relativ, damit die Vorschau unter `/hollaender/` funktioniert.
+Title: **Nadine Holländer | Beratung & Mediation in Recklinghausen**
 
-Lokal: `python3 -m http.server 8765` im Repository starten.
+Beschreibung: **Veränderung beginnt mit einer neuen Perspektive. Nadine Holländer – systemische Beraterin und zertifizierte Mediatorin in Recklinghausen. Jetzt Kontakt aufnehmen.**
+
+Enthalten sind Canonical, Open-Graph-/Twitter-Angaben, Fotobeschreibung und Bildabmessungen sowie strukturierte Daten für Person, Website, Webseite und Porträt. Die SEO-Werte stehen zusätzlich in `seo.json`.
+
+Die Pages-Vorschau bleibt mit `noindex,follow` von der Indexierung ausgeschlossen. `robots.txt` erlaubt den Abruf, damit Suchmaschinen das Noindex lesen können. Bild-Metadaten verweisen in der Vorschau auf das bereits erreichbare Pages-Foto. Canonical und Identität beziehen sich auf die spätere Hauptdomain.
+
+## IONOS-Paket
+
+`python3 scripts/build-ionos.py` erzeugt außerhalb des Repositorys unter `../outputs/ionos` die statische Übergabe. Das Paket verwendet ausschließlich die spätere Hauptdomain für absolute URLs, schaltet Indexierung frei und enthält Robots-Datei und Sitemap einschließlich Foto.
+
+Vor dem tatsächlichen IONOS-Start vollständiges Impressum und Datenschutzhinweise ergänzen, Vorschauhinweise entfernen sowie finale Texte, Bildnutzungsrechte und Webfont klären. Nach Veröffentlichung Sitemap in der Google Search Console einreichen. Das Paket ist für die spätere Veröffentlichung vorbereitet; IONOS wurde nicht verändert.
+
+Google entscheidet selbst über den angezeigten Titel, Beschreibungstext und ein mögliches Vorschaubild. Die Suchergebnisgrafik ist eine Illustration, kein Nachweis einer Indexierung.
 
 ## Gestaltung
 
-Verbindliche Farbwerte aus dem gelieferten Farbfächer:
+Farbfächer: Petrol `#006D82`, Blau `#8AB7C2`, Hellblau `#E2EDEF`, Schwarz und Weiß. Original-Logo, SVG-Pfeile, Logo-Signet als Favicon. Akzidenz Grotesk wird bis zur Lieferung einer lizenzierten Webfont durch Helvetica/Arial ersetzt. Keine Analysewerkzeuge, Cookies oder extern geladenen Schriften.
 
-- Petrol: `#006D82`
-- Blau: `#8AB7C2`
-- Hellblau: `#E2EDEF`
-- Schwarz und Weiß
-
-Original-Logo als SVG, Porträt für das Web optimiert. Das quadratische SVG-Favicon verwendet das unveränderte Signet aus dem Logo; ICO und Apple-Touch-Icon dienen als Rastervarianten. Die angefragte Akzidenz Grotesk ist bis zur Lieferung einer lizenzierten Webfont durch Helvetica/Arial ersetzt.
-
-## Vor dem endgültigen Start
-
-Gestaltungsrichtung auswählen, Texte abstimmen, vollständiges Impressum und Datenschutzhinweise ergänzen. Die gewählte HTML-Seite wird auf dem IONOS-Webspace als `index.html` eingesetzt. Entwurfsnavigation entfernen und `noindex,nofollow` bewusst anpassen.
-
-Die Vorschau enthält weder Cookies noch Analysewerkzeuge und lädt keine externen Schriften. Kontaktlinks öffnen die Mail- bzw. Telefonanwendung. Mails, Kontozugangsdaten und unbearbeitete Quelldokumente gehören nicht in dieses Repository.
+Mails, Zugangsdaten und unbearbeitete Quelldokumente gehören nicht in dieses Repository.

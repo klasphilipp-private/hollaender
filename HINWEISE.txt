@@ -1,20 +1,13 @@
-NADINE HOLLÄNDER – ERSTE WEBSEITENENTWÜRFE
+NADINE HOLLÄNDER – GEWÄHLTE WEBSITE
 
-Ansicht: index.html im Browser öffnen. Alle Dateien funktionieren auch lokal.
-01: entwurf-1.html – Persönliche Startseite mit Porträt
-02: entwurf-2.html – Reduzierte Bald-mehr-Seite mit Logo
-03: entwurf-3.html – Erste Vorstellung mit Kurzprofil
+Die gewählte Fassung (ehemaliger Entwurf 3) liegt direkt in index.html. Die anderen Entwürfe wurden entfernt.
+Überschrift: Veränderung beginnt mit einer neuen Perspektive.
+Dreizeiler: Strukturiert. / Zugewandt. / Authentisch.
 
-Grundlagen: Logos und Kontaktdaten aus Logo.eml; Kurzprofil und Porträt aus dem verlinkten PDF in Zugangsdaten.eml. Überschriften und ergänzende Einleitung sind Textvorschläge.
-Die Logos liegen als unveränderte SVG-Vektoren vor. Das hochauflösende Porträt wurde für das Web verkleinert.
-Akzidenz Grotesk wurde gewünscht, eine lizenzierte Webfont-Datei wurde nicht mitgeliefert. Deshalb nutzt die Website aktuell Helvetica/Arial als Ersatz.
+Die GitHub-Pages-Fassung ist eine nicht zur Indexierung freigegebene Vorschau.
+SEO-Metadaten, strukturierte Daten und Fotoangaben sind vorbereitet.
+Für das spätere IONOS-Paket: python3 scripts/build-ionos.py
+Weitere Angaben in README.md und seo.json.
 
-SPÄTERER START BEI IONOS
-Die Entwürfe sind statische HTML-Seiten und benötigen keine Datenbank und kein zusätzliches System. Im IONOS-Webspace muss die gewählte Variante später index.html heißen; der Ordner assets muss daneben liegen. Die enthaltene index.html ist derzeit nur die Entwurfsübersicht.
-Vor Veröffentlichung: finale Texte und Foto auswählen, vollständiges Impressum und Datenschutzhinweise ergänzen, Entwurfshinweise/Übersichtslinks entfernen und Suchmaschinen-Freigabe bewusst setzen (aktuell noindex/nofollow).
-Es gibt keine extern geladenen Schriften, Analysefunktionen oder Cookies in diesen Entwürfen. Mail- und Telefonlinks öffnen die jeweilige Anwendung.
-
-Nicht bei IONOS veröffentlicht. Keine Zugangsdaten in diesem Paket.
-
-VERBINDLICHE FARBEN AUS DEM FARBFÄCHER
-Petrol #006D82, Blau #8AB7C2, Hellblau #E2EDEF, Schwarz #000000, Weiß #FFFFFF. Die in der Grafik gedruckten HEX-Werte sind maßgeblich.
+Vor dem IONOS-Start: finale Inhalte, vollständiges Impressum und Datenschutz ergänzen, Vorschauhinweise entfernen, Foto- und Schriftlizenzen klären.
+Noch nicht auf IONOS veröffentlicht. Keine Zugangsdaten enthalten.
