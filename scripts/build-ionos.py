@@ -21,7 +21,7 @@ if args.target == 'ionos':
 for name in ['impressum.html', 'datenschutz.html']:
     page = (root/name).read_text()
     if name == 'datenschutz.html':
-        hosting = (root/'content'/('hosting-' + ('ionos' if args.target == 'ionos' else 'github') + '.html')).read_text().strip()
+        hosting = (root/'content/hosting-ionos.html').read_text().strip()
         page, count = re.subn(r'<!--HOSTING_START-->.*?<!--HOSTING_END-->', lambda _: hosting, page, flags=re.S)
         if count != 1:
             raise SystemExit('Expected exactly one hosting section.')

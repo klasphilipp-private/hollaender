@@ -1,6 +1,6 @@
 # Veröffentlichung bei IONOS
 
-Die Website ist statisch. Derselbe Build kann von einem Rechner, diesem Chat oder einem GitHub-Repository mit den berechtigten Zugangsdaten hochgeladen werden. IONOS-Produktion und GitHub Pages erhalten jeweils den zum tatsächlichen Hoster passenden Datenschutzabschnitt. Die Seiten enthalten keine Umzugs- oder Entwurfshinweise.
+Die Website ist statisch. Derselbe Build kann von einem Rechner, diesem Chat oder einem GitHub-Repository mit den berechtigten Zugangsdaten hochgeladen werden. IONOS-Produktion und GitHub Pages zeigen auf ausdrücklichen Nutzerwunsch beide den für die Hauptdomain vorbereiteten IONOS-Datenschutzabschnitt. Die Seiten enthalten keine Umzugs- oder Entwurfshinweise.
 
 ## Status
 

@@ -4,7 +4,7 @@ Statische Website für https://www.nadinehollaender.de/. GitHub-Version: https:/
 
 ## Betrieb und Veröffentlichung
 
-Serverpaket: `python3 scripts/build-ionos.py --output /absoluter/ausgabeordner`. GitHub-Paket: derselbe Aufruf mit `--target pages`. Die zum jeweiligen Hoster passenden Rechtstexte werden beim Build ausgewählt. Auf der Website stehen keine Umzugs-/Entwurfshinweise. Die GitHub-Version bleibt noindex; die IONOS-Hauptseite wird für Suchmaschinen freigegeben.
+Serverpaket: `python3 scripts/build-ionos.py --output /absoluter/ausgabeordner`. GitHub-Paket: derselbe Aufruf mit `--target pages`. Die vorbereiteten IONOS-Rechtstexte werden auf ausdrücklichen Nutzerwunsch auch in der GitHub-Version angezeigt. Auf der Website stehen keine Umzugs-/Entwurfshinweise. Die GitHub-Version bleibt noindex; die IONOS-Hauptseite wird für Suchmaschinen freigegeben.
 
 Lokaler und wiederverwendbarer SFTP-Upload: siehe [DEPLOYMENT.md](DEPLOYMENT.md). Zugangsdaten ausschließlich als Umgebungsvariablen, verdeckte Eingabe oder GitHub Actions Secrets. Der Nutzer hat den ersten IONOS-Upload wegen des noch fehlenden Bestätigungscodes auf später verschoben; ein erfolgreicher Server-Upload wird nicht behauptet.
 
