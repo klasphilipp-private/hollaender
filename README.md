@@ -35,7 +35,7 @@ Mails, Zugangsdaten und unbearbeitete Quelldokumente gehören nicht in dieses Re
 
 `impressum.html` und `datenschutz.html` sind vom Footer jeder Seite erreichbar. Hellblaue Kästen mit der Beschriftung „Vor dem Start klären“ kennzeichnen unbestätigte Angaben. Die Seiten bleiben auch im IONOS-Paket vorerst auf `noindex`, bis die Texte vervollständigt und geprüft sind.
 
-Offen: Anbieterin/Adresse bestätigen; ggf. USt-/Wirtschafts-ID und Register; reglementierte Tätigkeit; Verbraucherschlichtung; ggf. redaktionell verantwortliche Person; Bildnachweis; Verantwortlichkeit/Datenschutzkontakt; Hostingvertrag und Log-Fristen; E-Mail-Dienst und Löschfristen; finale technische Dienste. Nicht zutreffende optionale Abschnitte vor dem Start entfernen. Der aktuelle GitHub-Host und der geplante IONOS-Host sind getrennt beschrieben.
+Offen: Wirtschafts-ID und etwaiger Registereintrag; Bildnachweis und Bildrechte; ggf. Datenschutzbeauftragte Person; Hostingvertrag und Log-Fristen; E-Mail-Dienst und Löschfristen; finale technische Dienste. Nicht zutreffende optionale Abschnitte vor dem Start entfernen. Der aktuelle GitHub-Host und der geplante IONOS-Host sind getrennt beschrieben.
 
 Der gemeinsame Header ist sticky mit transparentem Weiß und Hintergrundunschärfe. Ab 120 px Scrollposition verkleinert er sich; beim Rückweg unter 40 px wird er wieder größer. Die Hysterese verhindert Flackern. Bewegungsreduktion wird berücksichtigt. Der Navigationsbereich kann später weitere Links aufnehmen.
 
@@ -48,3 +48,13 @@ Recherchegrundlagen (4. November 2026):
 - IONOS Anbieter: https://www.ionos.de/impressum.html
 - IONOS Logdateien: https://www.ionos.de/hilfe/hosting/log-dateien/hinweise-zu-logdateien/
 - IONOS Auftragsverarbeitung: https://www.ionos.de/hilfe/index.php?id=3212
+
+## Übernommene Rückmeldung vom 6. November 2026
+
+- Anbieterin als Einzelperson und Geschäftsadresse bestätigt.
+- Keine USt-ID laut Rückmeldung. Das begründet keine Aussage zu einer etwaigen Wirtschafts-ID oder einem Registereintrag; diese Restfragen bleiben markiert. Es wird keine unbelegte umsatzsteuerliche Einordnung veröffentlicht.
+- Keine reglementierte Tätigkeit: zugehöriger offener Abschnitt entfernt.
+- Keine Pflicht/Bereitschaft zur Verbraucherschlichtung: Erklärung eingetragen.
+- Inhaltlich verantwortlich ist Nadine Holländer mit derselben Anschrift. Eine Benennung nach § 18 Abs. 2 MStV wird für diese reine Vorstellungsseite nicht behauptet; bei späteren journalistisch-redaktionellen Inhalten erneut prüfen.
+- Bildnachweis und Rechte bleiben offen. Im Datenschutz nur die bestätigte Verantwortlichkeit/Adresse übernommen; keine Hosting- oder Löschfristen erfunden.
+- Der Kontaktaufruf im Profil besteht aus zwei gleich großen Buttons untereinander: E-Mail und Telefonnummer (`tel:+491772425124`).
