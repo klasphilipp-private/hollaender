@@ -2,3 +2,9 @@
 *.eml
 .env
 .env.*
+.venv*/
+__pycache__/
+work/
+*.pem
+*.key
+*deploy-config*.json

@@ -1,0 +1,64 @@
+name: Deploy to IONOS
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Check SFTP access without changing server files
+        type: boolean
+        default: true
+  workflow_call:
+    inputs:
+      dry_run:
+        type: boolean
+        default: true
+    secrets:
+      IONOS_SFTP_HOST:
+        required: true
+      IONOS_SFTP_USER:
+        required: true
+      IONOS_SFTP_PASSWORD:
+        required: false
+      IONOS_SFTP_KEY:
+        required: false
+      IONOS_SFTP_PATH:
+        required: true
+      IONOS_SFTP_FINGERPRINT:
+        required: true
+      IONOS_SFTP_PORT:
+        required: false
+      IONOS_SITE_URL:
+        required: false
+permissions:
+  contents: read
+concurrency:
+  group: ionos-production
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          repository: klasphilipp-private/hollaender
+          ref: main
+          persist-credentials: false
+      - name: Install SFTP client
+        run: python3 -m pip install -r scripts/requirements-deploy.txt
+      - name: Build, check and deploy
+        env:
+          IONOS_SFTP_HOST: ${{ secrets.IONOS_SFTP_HOST }}
+          IONOS_SFTP_USER: ${{ secrets.IONOS_SFTP_USER }}
+          IONOS_SFTP_PASSWORD: ${{ secrets.IONOS_SFTP_PASSWORD }}
+          IONOS_SFTP_KEY: ${{ secrets.IONOS_SFTP_KEY }}
+          IONOS_SFTP_PATH: ${{ secrets.IONOS_SFTP_PATH }}
+          IONOS_SFTP_FINGERPRINT: ${{ secrets.IONOS_SFTP_FINGERPRINT }}
+          IONOS_SFTP_PORT: ${{ secrets.IONOS_SFTP_PORT }}
+          IONOS_SITE_URL: ${{ secrets.IONOS_SITE_URL }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          if [ "$DRY_RUN" = "true" ]; then
+            python3 scripts/deploy-ionos.py --dry-run
+          else
+            python3 scripts/deploy-ionos.py
+          fi

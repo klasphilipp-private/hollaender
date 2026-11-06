@@ -9,12 +9,12 @@ At the start of the NEXT substantive extension of this website (new pages, new s
 - No regulated profession. No obligation/willingness for consumer dispute resolution.
 - Photo credit requested: Fotos: Nadine Holländer.
 - Contact data/documents only for requests, their handling and contracted care/consulting; no advertising use.
-- IONOS hosting planned; AVV exists, confirmed by user. Pages preview still actually hosted on GitHub. Never describe the preview as already hosted on IONOS.
+- IONOS production deployment is explicitly authorized. AVV exists. First upload was postponed by user because the IONOS email confirmation code was unavailable; do not claim production deployment succeeded. Also check www DNS and HTTPS certificate before launch.
 - No cookies/local storage/third-party client-side tracking, forms, maps, videos or remotely loaded fonts in the current implementation. Recheck after extensions, including any host-provided statistics.
 - Nadine is the data controller/contact for privacy questions; do not label her her own independent Datenschutzbeauftragte.
 
-## Hosting variants
-`datenschutz.html` has the current Pages-hosting text between HOSTING_START/HOSTING_END. `content/hosting-ionos.html` is the actual IONOS hosting paragraph inserted by `scripts/build-ionos.py` into the handoff package. Keep the variants factually correct. GitHub preview stays noindex. Never deploy to IONOS without the user's request.
+## Hosting variants and deploy
+The committed visitor text and `content/hosting-ionos.html` contain the finished IONOS version. `scripts/build-ionos.py --target pages` substitutes `content/hosting-github.html` when publishing to GitHub Pages, so both hosts have factual text with no migration/preview wording. `--target ionos` (default) generates the production package. GitHub stays noindex. Deployment is manually triggered through `.github/workflows/deploy-ionos.yml` or `scripts/deploy-ionos.py`. Credentials must be environment/repository secrets or in-memory stdin, never tracked files. A pinned SSH host-key fingerprint and explicit remote directory are required. Do not change passwords or create credentials on the user's behalf through the browser.
 
 ## Internal launch follow-up (not visitor-facing placeholders)
 Verify any assigned Wirtschafts-ID / register entry, actual IONOS product/log retention/statistics configuration, and actual email provider/retention and transfers against the contracts. The site uses only the confirmed no-USt-ID statement, without making a claim that no Wirtschafts-ID exists. User-supplied credit is not a blanket license declaration. Assess any duty to appoint an independent DSB against actual business processing, rather than self-appointment.

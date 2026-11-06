@@ -1,10 +1,12 @@
 # Nadine Holländer
 
-Statische Website, gewählte Gestaltung aus Entwurf 3. Vorschau: https://klasphilipp-private.github.io/hollaender/; spätere Domain: https://www.nadinehollaender.de/.
+Statische Website für https://www.nadinehollaender.de/. GitHub-Version: https://klasphilipp-private.github.io/hollaender/.
 
-## Betrieb und Übergabe
+## Betrieb und Veröffentlichung
 
-GitHub Pages veröffentlicht `main` aus dem Hauptverzeichnis. Die Vorschau bleibt `noindex`. `python3 scripts/build-ionos.py --output /absoluter/ausgabeordner` erzeugt eine separate IONOS-Fassung mit Sitemap, Bildangaben und angepassten URLs. Der Build ersetzt den markierten Hosting-Abschnitt durch `content/hosting-ionos.html`. So wird die GitHub-Vorschau nicht fälschlich als IONOS-Hosting beschrieben. IONOS wurde nicht verändert.
+Serverpaket: `python3 scripts/build-ionos.py --output /absoluter/ausgabeordner`. GitHub-Paket: derselbe Aufruf mit `--target pages`. Die zum jeweiligen Hoster passenden Rechtstexte werden beim Build ausgewählt. Auf der Website stehen keine Umzugs-/Entwurfshinweise. Die GitHub-Version bleibt noindex; die IONOS-Hauptseite wird für Suchmaschinen freigegeben.
+
+Lokaler und wiederverwendbarer SFTP-Upload: siehe [DEPLOYMENT.md](DEPLOYMENT.md). Zugangsdaten ausschließlich als Umgebungsvariablen, verdeckte Eingabe oder GitHub Actions Secrets. Der Nutzer hat den ersten IONOS-Upload wegen des noch fehlenden Bestätigungscodes auf später verschoben; ein erfolgreicher Server-Upload wird nicht behauptet.
 
 ## Rechtstexte und bestätigte Angaben
 
