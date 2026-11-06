@@ -2,6 +2,7 @@
 from pathlib import Path
 from shutil import copytree, copy2
 import argparse
+import re
 
 root=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser()
@@ -16,7 +17,13 @@ html=html.replace('noindex,follow,max-image-preview:large','index,follow,max-ima
 html=html.replace('https://klasphilipp-private.github.io/hollaender/','https://www.nadinehollaender.de/')
 (out/'index.html').write_text(html)
 for name in ['impressum.html', 'datenschutz.html']:
-    copy2(root/name, out/name)  # Draft legal pages retain noindex until completed.
+    page = (root/name).read_text()
+    if name == 'datenschutz.html':
+        hosting = (root/'content/hosting-ionos.html').read_text().strip()
+        page, count = re.subn(r'<!--HOSTING_START-->.*?<!--HOSTING_END-->', lambda _: hosting, page, flags=re.S)
+        if count != 1:
+            raise SystemExit('Expected exactly one hosting section.')
+    (out/name).write_text(page)
 copytree(root/'assets',out/'assets',dirs_exist_ok=True)
 copy2(root/'favicon.ico',out/'favicon.ico')
 (out/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: https://www.nadinehollaender.de/sitemap.xml\n')

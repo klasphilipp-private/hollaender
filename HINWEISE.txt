@@ -1,13 +1,6 @@
-NADINE HOLLÄNDER – GEWÄHLTE WEBSITE
-
-Die gewählte Fassung (ehemaliger Entwurf 3) liegt direkt in index.html. Die anderen Entwürfe wurden entfernt.
-Überschrift: Veränderung beginnt mit einer neuen Perspektive.
-Dreizeiler: Strukturiert. / Zugewandt. / Authentisch.
-
-Die GitHub-Pages-Fassung ist eine nicht zur Indexierung freigegebene Vorschau.
-SEO-Metadaten, strukturierte Daten und Fotoangaben sind vorbereitet.
-Für das spätere IONOS-Paket: python3 scripts/build-ionos.py
-Weitere Angaben in README.md und seo.json.
-
-Vor dem IONOS-Start: finale Inhalte, vollständiges Impressum und Datenschutz ergänzen, Vorschauhinweise entfernen, Foto- und Schriftlizenzen klären.
-Noch nicht auf IONOS veröffentlicht. Keine Zugangsdaten enthalten.
+NADINE HOLLÄNDER – WEBSITE
+Die Besuchertexte wurden anhand der Rückmeldungen vom 6. November 2026 bereinigt.
+Vorschau: GitHub Pages. Geplanter späterer Hoster: IONOS.
+IONOS-Übergabe: python3 scripts/build-ionos.py --output /absoluter/ausgabeordner
+Interne Nachprüfpunkte und die Erinnerung für künftige Erweiterungen stehen in AGENTS.md.
+Keine Mails oder Zugangsdaten enthalten. Noch nicht auf IONOS veröffentlicht.

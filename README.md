@@ -1,60 +1,32 @@
-# Nadine Holländer – Website
+# Nadine Holländer
 
-Gewählte Gestaltung: ehemaliger Entwurf 3. Die Website liegt jetzt direkt in `index.html`; die übrigen Entwürfe und die Auswahlübersicht wurden entfernt.
+Statische Website, gewählte Gestaltung aus Entwurf 3. Vorschau: https://klasphilipp-private.github.io/hollaender/; spätere Domain: https://www.nadinehollaender.de/.
 
-- Überschrift: **Veränderung beginnt mit einer neuen Perspektive.**
-- Haltung: **Strukturiert. Zugewandt. Authentisch.**
-- Vorschau: https://klasphilipp-private.github.io/hollaender/
-- Spätere Hauptdomain: https://www.nadinehollaender.de/
+## Betrieb und Übergabe
 
-## SEO
+GitHub Pages veröffentlicht `main` aus dem Hauptverzeichnis. Die Vorschau bleibt `noindex`. `python3 scripts/build-ionos.py --output /absoluter/ausgabeordner` erzeugt eine separate IONOS-Fassung mit Sitemap, Bildangaben und angepassten URLs. Der Build ersetzt den markierten Hosting-Abschnitt durch `content/hosting-ionos.html`. So wird die GitHub-Vorschau nicht fälschlich als IONOS-Hosting beschrieben. IONOS wurde nicht verändert.
 
-Title: **Nadine Holländer | Beratung & Mediation in Recklinghausen**
+## Rechtstexte und bestätigte Angaben
 
-Beschreibung: **Veränderung beginnt mit einer neuen Perspektive. Nadine Holländer – systemische Beraterin und zertifizierte Mediatorin in Recklinghausen. Jetzt Kontakt aufnehmen.**
+Besuchertexte in Impressum und Datenschutz sind von den Entwurfs-/Rückfragekästen befreit. Bestätigt sind Einzelbetreiberin und Geschäftsanschrift, fehlende USt-ID, keine reglementierte Tätigkeit, keine Verpflichtung/Bereitschaft zur Verbraucherschlichtung, Fotoangabe „Fotos: Nadine Holländer“, die vorliegende IONOS-AVV sowie die ausschließliche Nutzung von Anfragen/Dokumentationen für deren Bearbeitung und vereinbarte Betreuung.
 
-Enthalten sind Canonical, Open-Graph-/Twitter-Angaben, Fotobeschreibung und Bildabmessungen sowie strukturierte Daten für Person, Website, Webseite und Porträt. Die SEO-Werte stehen zusätzlich in `seo.json`.
+Nadine wird als datenschutzrechtlich Verantwortliche und Ansprechpartnerin geführt; nicht als ihre eigene unabhängige Datenschutzbeauftragte. Aus der geringen freiberuflichen Tätigkeit wird kein §-19-UStG-Status und keine Aussage über eine Wirtschafts-ID abgeleitet. Die USt-ID-Angabe lautet nur, dass keine Nummer erteilt wurde. Interne Nachprüfpunkte stehen in AGENTS.md und nicht als Platzhalter in den Besuchertexten.
 
-Die Pages-Vorschau bleibt mit `noindex,follow` von der Indexierung ausgeschlossen. `robots.txt` erlaubt den Abruf, damit Suchmaschinen das Noindex lesen können. Bild-Metadaten verweisen in der Vorschau auf das bereits erreichbare Pages-Foto. Canonical und Identität beziehen sich auf die spätere Hauptdomain.
+Bei zukünftigen Erweiterungen den Nutzer an die Aktualisierung von Impressum und Datenschutz erinnern und die konkreten Auswirkungen der neuen Inhalte/Dienste prüfen (expliziter Nutzerwunsch, siehe AGENTS.md).
 
-## IONOS-Paket
+## Gestaltung und SEO
 
-`python3 scripts/build-ionos.py` erzeugt außerhalb des Repositorys unter `../outputs/ionos` die statische Übergabe. Das Paket verwendet ausschließlich die spätere Hauptdomain für absolute URLs, schaltet Indexierung frei und enthält Robots-Datei und Sitemap einschließlich Foto.
+Originalfarben: #006D82, #8AB7C2, #E2EDEF, Schwarz und Weiß. Lokale Logo-/Foto-Dateien, SVG-Pfeile, Signet-Favicon, zwei gleich große Kontaktbuttons im Profil. Transparenter sticky Header mit kompakter Scrollansicht. Helvetica/Arial als Ersatz für Akzidenz Grotesk bis zur Lieferung einer lizenzierten Webfont. Keine eigenen Cookies, Webspeicher oder eingebundenen Tracking-/Karten-/Video-Dienste.
 
-Vor dem tatsächlichen IONOS-Start vollständiges Impressum und Datenschutzhinweise ergänzen, Vorschauhinweise entfernen sowie finale Texte, Bildnutzungsrechte und Webfont klären. Nach Veröffentlichung Sitemap in der Google Search Console einreichen. Das Paket ist für die spätere Veröffentlichung vorbereitet; IONOS wurde nicht verändert.
+Metadaten, Canonical und strukturierte Daten zu Person, Website und Foto sind in index.html hinterlegt; SEO-Werte zusätzlich in seo.json. Google entscheidet selbst über Titel, Snippet und Bildanzeige.
 
-Google entscheidet selbst über den angezeigten Titel, Beschreibungstext und ein mögliches Vorschaubild. Die Suchergebnisgrafik ist eine Illustration, kein Nachweis einer Indexierung.
+## Recherchegrundlagen
 
-## Gestaltung
-
-Farbfächer: Petrol `#006D82`, Blau `#8AB7C2`, Hellblau `#E2EDEF`, Schwarz und Weiß. Original-Logo, SVG-Pfeile, Logo-Signet als Favicon. Akzidenz Grotesk wird bis zur Lieferung einer lizenzierten Webfont durch Helvetica/Arial ersetzt. Keine Analysewerkzeuge, Cookies oder extern geladenen Schriften.
-
-Mails, Zugangsdaten und unbearbeitete Quelldokumente gehören nicht in dieses Repository.
-
-## Vorbereitete Rechtstexte und Header
-
-`impressum.html` und `datenschutz.html` sind vom Footer jeder Seite erreichbar. Hellblaue Kästen mit der Beschriftung „Vor dem Start klären“ kennzeichnen unbestätigte Angaben. Die Seiten bleiben auch im IONOS-Paket vorerst auf `noindex`, bis die Texte vervollständigt und geprüft sind.
-
-Offen: Wirtschafts-ID und etwaiger Registereintrag; Bildnachweis und Bildrechte; ggf. Datenschutzbeauftragte Person; Hostingvertrag und Log-Fristen; E-Mail-Dienst und Löschfristen; finale technische Dienste. Nicht zutreffende optionale Abschnitte vor dem Start entfernen. Der aktuelle GitHub-Host und der geplante IONOS-Host sind getrennt beschrieben.
-
-Der gemeinsame Header ist sticky mit transparentem Weiß und Hintergrundunschärfe. Ab 120 px Scrollposition verkleinert er sich; beim Rückweg unter 40 px wird er wieder größer. Die Hysterese verhindert Flackern. Bewegungsreduktion wird berücksichtigt. Der Navigationsbereich kann später weitere Links aufnehmen.
-
-Recherchegrundlagen (4. November 2026):
 - § 5 DDG: https://www.gesetze-im-internet.de/ddg/__5.html
 - § 36 VSBG: https://www.gesetze-im-internet.de/vsbg/__36.html
-- DSGVO: https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=de
-- LDI NRW: https://www.ldi.nrw.de/
-- GitHub: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
-- IONOS Anbieter: https://www.ionos.de/impressum.html
-- IONOS Logdateien: https://www.ionos.de/hilfe/hosting/log-dateien/hinweise-zu-logdateien/
-- IONOS Auftragsverarbeitung: https://www.ionos.de/hilfe/index.php?id=3212
+- DSB-Interessenkonflikte, Abschnitt 3.5: https://www.datenschutzkonferenz-online.de/media/wp/20170405_wp243_rev01.pdf
+- IONOS Webhosting: https://www.ionos.de/hilfe/datenschutz/datenverarbeitung-durch-ihr-ionos-produktes/datenverarbeitung-durch-webhosting-produkte/
+- IONOS AVV: https://www.ionos.de/hilfe/index.php?id=3212
+- GitHub Datenschutz: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
 
-## Übernommene Rückmeldung vom 6. November 2026
-
-- Anbieterin als Einzelperson und Geschäftsadresse bestätigt.
-- Keine USt-ID laut Rückmeldung. Das begründet keine Aussage zu einer etwaigen Wirtschafts-ID oder einem Registereintrag; diese Restfragen bleiben markiert. Es wird keine unbelegte umsatzsteuerliche Einordnung veröffentlicht.
-- Keine reglementierte Tätigkeit: zugehöriger offener Abschnitt entfernt.
-- Keine Pflicht/Bereitschaft zur Verbraucherschlichtung: Erklärung eingetragen.
-- Inhaltlich verantwortlich ist Nadine Holländer mit derselben Anschrift. Eine Benennung nach § 18 Abs. 2 MStV wird für diese reine Vorstellungsseite nicht behauptet; bei späteren journalistisch-redaktionellen Inhalten erneut prüfen.
-- Bildnachweis und Rechte bleiben offen. Im Datenschutz nur die bestätigte Verantwortlichkeit/Adresse übernommen; keine Hosting- oder Löschfristen erfunden.
-- Der Kontaktaufruf im Profil besteht aus zwei gleich großen Buttons untereinander: E-Mail und Telefonnummer (`tel:+491772425124`).
+Mails, Zugangsdaten und unbearbeitete Quelldokumente gehören nicht in dieses Repository.
